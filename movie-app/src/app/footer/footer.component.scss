@@ -1,0 +1,19 @@
+@import '../app.component.scss';
+.big-fonts {
+    font-size: map-get($font-sizes, "big");
+}
+
+.medium-fonts {
+    font-size: map-get($font-sizes, "medium");
+}
+
+.copyright-text-alignment {
+    margin-left: 40%;
+}
+
+footer {
+    /* Sticks footer at the bottom of a page*/
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
