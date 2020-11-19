@@ -11,6 +11,9 @@ import { AdminMainPageComponent } from './admin-main-page/admin-main-page.compon
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { routes } from "../route";
+import { MainPageComponent } from './main-page/main-page.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
+import { MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -20,12 +23,15 @@ import { routes } from "../route";
     UserMainPageComponent,
     AdminMainPageComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    MainPageComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

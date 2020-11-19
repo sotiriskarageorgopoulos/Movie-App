@@ -1,2 +1,10 @@
-$font-sizes: ("small":14px, "medium": 18px, "big": 20px);
+$font-sizes: ("small":14px, "medium": 18px, "big": 20px, "biggest": 30px);
 $font-weights: ("regular": 400, "medium": 500, "bold": 700);
+@mixin header-font-size {
+    font-size: map-get($font-sizes, "biggest");
+}
+
+@font-face {
+    font-family: "Beyond Wonderland";
+    src: url('../assets/images/Beyond\ Wonderland.ttf');
+}
