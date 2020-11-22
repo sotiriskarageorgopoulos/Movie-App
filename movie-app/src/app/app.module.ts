@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { DatasharingService } from './services/footerservice/datasharing.service';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -33,7 +34,7 @@ import { MatCardModule} from '@angular/material/card';
     RouterModule.forRoot(routes),
     MatCardModule
   ],
-  providers: [],
+  providers: [DatasharingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

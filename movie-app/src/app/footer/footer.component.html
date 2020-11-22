@@ -1,4 +1,8 @@
-<footer class="container-fluid bg-light footer-main-page">
+<footer class="container-fluid bg-light" [ngClass]="{
+    'footer-main-page':nameOfComponent === 'MainPageComponent',
+    'footer-register': nameOfComponent === 'RegisterComponent',
+    'footer-login': nameOfComponent === 'LoginComponent'
+}">
     <article class="row">
         <section class="col-sm-4">
             <p class="big-fonts m-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae sint blanditiis recusandae eius provident dolorum, nam veritatis iusto repudiandae omnis vitae reiciendis! Dignissimos, fugiat ab dolorem deleniti necessitatibus eveniet laborum.</p>

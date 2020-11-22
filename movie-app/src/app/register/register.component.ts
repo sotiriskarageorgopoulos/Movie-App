@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatasharingService } from '../services/footerservice/datasharing.service';
 
 @Component({
   selector: 'app-register',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ds:DatasharingService) { 
+    this.ds.setNameOfComponent(this.constructor.name);
+  }
 
   ngOnInit(): void {
+    
   }
 
 }

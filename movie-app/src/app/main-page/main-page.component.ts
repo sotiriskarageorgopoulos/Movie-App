@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatasharingService } from '../services/footerservice/datasharing.service';
 
 @Component({
   selector: 'app-main-page',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ds:DatasharingService) { 
+    this.ds.setNameOfComponent(this.constructor.name);
+  }
 
   ngOnInit(): void {
   }

@@ -8,3 +8,11 @@ $font-weights: ("regular": 400, "medium": 500, "bold": 700);
     font-family: "Beyond Wonderland";
     src: url('../assets/images/Beyond\ Wonderland.ttf');
 }
+
+@mixin register-login-form {
+    width: 80%;
+    border: 2px solid whitesmoke;
+    padding: 5%;
+    box-shadow: 5px 10px;
+    width: 100%;
+}

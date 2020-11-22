@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { DatasharingService } from '../services/footerservice/datasharing.service';
 
 @Component({
   selector: 'app-footer',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  @Input()
+  nameOfComponent: string;
 
-  constructor() { }
+  constructor(private ds:DatasharingService) { 
+  }
 
   ngOnInit(): void {
+  }
+
+  ngDoCheck(): void {
+    this.nameOfComponent = this.ds.getNameOfComponent();
+    console.log(this.nameOfComponent);
   }
 
 }

@@ -1,0 +1,11 @@
+@import '../app.component.scss';
+.login-form {
+    @include register-login-form;
+    margin-top: 40%;
+    margin-bottom: 90%;
+}
+
+.login-btn {
+    margin-left: 40%;
+    width: 20%;
+}
